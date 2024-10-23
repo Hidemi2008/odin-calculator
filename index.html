@@ -9,31 +9,33 @@
 <body>
     <div id="container">
         <div id="inputs">
-            <input type="" name="entrada" id="entrada" class="input" value="1+5">
+            <div id="div">
+
+            </div>
         </div>
         <div id="nums">
             <div class="cont">
-                <button id="n1" class="num">1 </button>
-                <button id="n2" class="num"> 2</button>
-                <button id="n3" class="num"> 3</button>
-                <button id="sum" class="operation">+</button>
+                <button id="n1" class="num" onclick="nu1()">1 </button>
+                <button id="n2" class="num"onclick="nu2()"> 2</button>
+                <button id="n3" class="num"onclick="num3()"> 3</button>
+                <button id="sum" class="operation" onclick="s()">+</button>
             </div>
             <div class="cont">
-                <button id="n4" class="num"> 4</button>
-                <button id="n5" class="num"> 5</button>
-                <button id="n6" class="num"> 6</button>
-                <button id="less" class="operation">-</button>
+                <button id="n4" class="num"onclick="num4()"> 4</button>
+                <button id="n5" class="num"onclick="num5()"> 5</button>
+                <button id="n6" class="num"onclick="num6()"> 6</button>
+                <button id="less" class="operation" onclick="l()">-</button>
             </div>
             <div class="cont">
-                <button id="n7" class="num">7 </button>
-                <button id="n8" class="num">8 </button>
-                <button id="n9" class="num">9 </button>
-                <button id="mul" class="operation">*</button>
+                <button id="n7" class="num"onclick="num7()">7 </button>
+                <button id="n8" class="num"onclick="num8()">8 </button>
+                <button id="n9" class="num"onclick="num9()">9 </button>
+                <button id="mul" class="operation" onclick="m()">*</button>
             </div>
         </div>
         <div id="operations">
-            <button id="division" class="operation operation-separete">/</button>
-            <button id="equal" class="operation operation-separete">=</button>
+            <button id="division" class="operation operation-separete" onclick="d()">/</button>
+            <button id="equal" class="operation operation-separete" onclick="work()">=</button>
             <button id="reset" class="operation operation-separete">Reset</button>
         </div>
     </div>
