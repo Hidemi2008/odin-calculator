@@ -2,7 +2,14 @@ body{
     background-color: rgb(155, 155, 155);
 }
 
-
+#div{
+    background-color: white;
+    width: 280px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 100px;
+}
 
 #inputs{
     display: flex;
@@ -14,12 +21,14 @@ body{
 .cont{
     display: flex;
     justify-content: center;
+    gap: 1px;
 }
 
 #operations{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 1px;
+
 }
 
 
@@ -40,7 +49,8 @@ body{
 }
 
 .operation-separete{
-    width: 87px;
+    background-color: black;
+    color: white;
 }
 
 .input{

@@ -2,6 +2,7 @@ let num1 = 0
 let num2 = 0
 let operation = 0
 
+let n0 = document.querySelector("#n0")
 let n1 = document.querySelector("#n1")
 let n2 = document.querySelector("#n2")
 let n3 = document.querySelector("#n3")
@@ -77,10 +78,22 @@ let num = 0
 let div = document.querySelector('div')
 
 // fuctions onclick in numbers
+
+function num0(){
+    block.innerHTML = num
+    if(fistN == 0){
+        return fistN = num
+    }else{
+        if(secondN == 0){
+            return secondN = num
+        }
+    }
+}
+
 function nu1(){
     num = 1
-    n1.textContent = num
-    block.textContent = num
+    n1.innerHTML = num
+    block.innerHTML = num
     if(fistN == 0){
         return fistN = num
     }else{
@@ -92,8 +105,8 @@ function nu1(){
 
 function nu2(){
     num = 2
-    n2.textContent = num
-    block.textContent = num
+    n2.innerHTML = num
+    block.innerHTML = num
     if(fistN == 0){
         return fistN = num
     }else{
@@ -106,7 +119,7 @@ function nu2(){
 function num3(){
     num = 3
     n3.textContent = num
-    block.textContent = num
+    block.innerHTML = num
     if(fistN == 0){
         return fistN = num
     }else{
@@ -119,7 +132,7 @@ function num3(){
 function num4(){
     num = 4
     n4.textContent = num
-    block.textContent = num
+    block.innerHTML = num
     if(fistN == 0){
         return fistN = num
     }else{
@@ -132,7 +145,7 @@ function num4(){
 function num5(){
     num = 5
     n5.textContent = num
-    block.textContent = num
+    block.innerHTML = num
     if(fistN == 0){
         return fistN = num
     }else{
@@ -145,7 +158,7 @@ function num5(){
 function num6(){
     num = 6
     n6.textContent = num
-    block.textContent = num
+    block.innerHTML = num
     if(fistN == 0){
         return fistN = num
     }else{
@@ -158,7 +171,7 @@ function num6(){
 function num7(){
     num = 7
     n7.textContent = num
-    block.textContent = num
+    block.innerHTML = num
     if(fistN == 0){
         return fistN = num
     }else{
@@ -171,7 +184,7 @@ function num7(){
 function num8(){
     num = 8
     n8.textContent = num
-    block.textContent = num
+    block.innerHTML = num
     if(fistN == 0){
         return fistN = num
     }else{
@@ -184,7 +197,7 @@ function num8(){
 function num9(){
     num = 9
     n9.textContent = num
-    block.textContent = num
+    block.innerHTML = num
     if(fistN == 0){
         return fistN = num
     }else{
@@ -235,4 +248,10 @@ function work(){
     result = operate(fistN,ope,secondN)
     block.textContent = result 
     return fistN = result
+}
+
+let res = document.querySelector("#reset")
+
+function reset(){
+    block.textContent = 0
 }
