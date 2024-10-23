@@ -22,58 +22,50 @@ let inputE = document.querySelector('#entrada')
 
 let block = document.querySelector('#div')
 
-function sum(num = []){
+function sum(num1,num2){
     let soma = 0
-    for(let i = 0; i < num.length; i++){
-        soma += num[i]
-    }
-    return soma
+    return soma = num1+num2
 }
 
 
-function dif(num = []){
+function dif(num1,num2){
     let dife = 0
-    for(let i = 0; i < num.length; i++){
-        dife -= num[i] 
-    }
-    return dife
+    return dife = num1-num2
 }
 
 
-function mul(num = []){
-    let mult = 1
-    for(let i = 0; i< num.length; i++){
-        mult *= num[i] 
-    }
-    return mult
+function mul(num1,num2){
+    let mult = 0
+    return mult = num1*num2
 }
 
 
-function division(num = []){
-    let div = 1
-    for(let i = 0; i < 1; i++){
-        div = num[i] / num[i+1]
-    }
-    return div
+function division(num1,num2){
+    let div = 0
+    return div = num1/num2
 }
 
 
 function operate(num1,operate,num2){
     if(operate == "+"){
-        let arrayS = [num1,num2]
-        return sum(arrayS)
+        secondN = 0
+        ope = ""
+        return sum(num1,num2)
     }else{
         if(operate == "-"){
-            let arrayD = [num1,num2]
-            return dif(arrayD)
+            secondN = 0
+            ope = ""
+            return dif(num1,num2)
         }else{
             if(operate == "*"){
-                let arrayM = [num1,num2]
-               return mul(arrayM)
+            secondN = 0
+            ope = ""
+               return mul(num1,num2)
             }else{
                 if(operate == "/"){
-                    let arrayDiv = [num1,num2]
-                    return division(arrayDiv)
+                    secondN = 0
+                    ope = ""
+                    return division(num1,num2)
                 }
             }
         }
@@ -241,5 +233,6 @@ function d(){
 let result = 0
 function work(){
     result = operate(fistN,ope,secondN)
-    block.textContent = "This is result of account"
+    block.textContent = result 
+    return fistN = result
 }
