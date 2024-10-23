@@ -7,38 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-        <div class="container">
-
-        <div id="header">
-            <h1>CALCULATOR</h1>
+    <div id="container">
+        <div id="inputs">
+            <input type="" name="entrada" id="entrada" class="input" value="1+5">
         </div>
-        <div class="main">
-            <input type="" name="entrada" id="entrada" value="1+2">
+        <div id="nums">
+            <div class="cont">
+                <button id="n1" class="num">1 </button>
+                <button id="n2" class="num"> 2</button>
+                <button id="n3" class="num"> 3</button>
+                <button id="sum" class="operation">+</button>
+            </div>
+            <div class="cont">
+                <button id="n4" class="num"> 4</button>
+                <button id="n5" class="num"> 5</button>
+                <button id="n6" class="num"> 6</button>
+                <button id="less" class="operation">-</button>
+            </div>
+            <div class="cont">
+                <button id="n7" class="num">7 </button>
+                <button id="n8" class="num">8 </button>
+                <button id="n9" class="num">9 </button>
+                <button id="mul" class="operation">*</button>
+            </div>
         </div>
-        <div class="num">
-            <button id="n1" class="n">1</button>
-            <button id="n2"class="n">2</button>
-            <button id="n3"class="n">3</button>
-            <button id="n4"class="n">4</button>
-            <button id="n5"class="n">5</button>
-            <button id="n6"class="n">6</button>
-            <button id="n7"class="n">7</button>
-            <button id="n8"class="n">8</button>
-            <button id="n9"class="n">9</button>
+        <div id="operations">
+            <button id="division" class="operation operation-separete">/</button>
+            <button id="equal" class="operation operation-separete">=</button>
+            <button id="reset" class="operation operation-separete">Reset</button>
         </div>
-        <div class="operations">
-            <button id="+" class="operation">+</button>
-            <button id="-" class="operation">-</button>
-            <button id="*" class="operation">*</button>
-            <button id="/" class="operation">/</button>
-            <button id="=" class="operation">=</button>
-            <button id="reset" class="operation">Limpar</button>
-        </div>
-    
     </div>
-   
-    <div class="final"></div>
+
     <script src="javascript.js"></script>
 </body>
 </html>

@@ -1,58 +1,53 @@
 body{
-    background-color: rgba(145, 145, 145, 0.801);
+    background-color: rgb(155, 155, 155);
 }
 
 
 
-.container{
-    background-color: rgba(187, 187, 187, 0.61);
-
-}
-
-#header{
+#inputs{
     display: flex;
     justify-content: center;
 }
 
-.main{
+
+
+.cont{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
-.num{
+#operations{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.operations{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 10px;
 }
 
-#entrada{
-    width: 60%;
-    height: 20px;
-    margin-bottom: 20px;
-}
 
-.n{
-    width: 150px;
+.num{
+    width: 70px;
     height: 50px;
-    color: rgb(75, 74, 74);
+    background-color: rgb(216, 216, 216);
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 .operation{
-    margin-top: 40px;
-    width: 80px;
+    width: 70px;
     height: 50px;
-    color: rgb(75, 74, 74);
+    background-color: rgb(216, 216, 216);
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
+.operation-separete{
+    width: 87px;
+}
 
-
-
+.input{
+    width: 270px;
+    height: 20px;
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid black;
+    border-radius: 5px;
+}
